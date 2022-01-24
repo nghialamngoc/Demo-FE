@@ -1,0 +1,23 @@
+{
+  "component": "box",
+  "id": "cardWrapper",
+  "className": "something",
+  "children": [
+    {
+      "component": "box",
+      "id": "initialWrapper",
+      "className": "aa",
+      "styles": [
+        {
+          "name": "backgroundColor",
+          "value": "#6366F1"
+        },
+        {
+          "name": "color",
+          "value": "white"
+        }
+      ],
+      "children": "dynamic config"
+    }
+  ]
+}

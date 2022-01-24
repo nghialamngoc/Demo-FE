@@ -1,0 +1,34 @@
+{
+  "initialFormValue": {
+    "firstName": "",
+    "lastName": "",
+    "email": ""
+  },
+  "fields": [
+    {
+      "name": "firstName",
+      "elementType": "input",
+      "type": "string",
+      "validations": [
+        {
+          "type": "required",
+          "params": [
+            "First name is required"
+          ]
+        },
+        {
+          "type": "min",
+          "params": [
+            7, "To Short!"
+          ]
+        },
+        {
+          "type": "max",
+          "params": [
+            10, "To Long!"
+          ]
+        }
+      ]
+    }
+  ]
+}

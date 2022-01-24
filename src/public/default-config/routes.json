@@ -1,0 +1,12 @@
+[
+  {
+    "route_name": "home",
+    "path": "/",
+    "component": "home"
+  },
+  {
+    "route_name": "form-demo",
+    "path": "/form-demo",
+    "component": "form"
+  }
+]
