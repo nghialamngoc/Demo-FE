@@ -22,3 +22,19 @@ export interface BoxElementProps {
   id: string
   children: any
 }
+
+export interface TextElementProps {
+  className: string
+  text:string
+  style: CSSProperties
+  id: string
+  children: any
+}
+
+export interface TableElementProps {
+  className: string
+  text:string
+  style: CSSProperties
+  id: string
+  children: any
+}

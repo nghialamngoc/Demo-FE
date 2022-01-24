@@ -1,9 +1,13 @@
 import { createElement } from 'react'
 import BoxElement from '../components/BoxElement'
+import TableElement from '../components/TableElement'
+import TextElement from '../components/TextElement'
 import { IConfig, Style } from '../interfaces'
 
 const keysToComponentMap: any = {
   box: BoxElement,
+  text:TextElement,
+  table:TableElement
 }
 
 const stylesMap = (styles: Array<Style>) => {
