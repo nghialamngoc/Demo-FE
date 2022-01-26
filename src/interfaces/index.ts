@@ -29,6 +29,8 @@ export interface TextElementProps {
   style: CSSProperties
   id: string
   children: any
+  level:string
+  props:any
 }
 
 export interface TableElementProps {
@@ -38,6 +40,7 @@ export interface TableElementProps {
   id: string
   children: any
   cols:any[]
+  api:string
 }
 
 export interface ButtonElementProps {

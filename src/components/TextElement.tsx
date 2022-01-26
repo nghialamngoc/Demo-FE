@@ -7,10 +7,13 @@ const TextElement = ({
   id,
   children, 
   text ,
+  props,
   ...restProps
 }: TextElementProps) => {
   return (
-    <Text fontSize='xs'>{text}</Text>
+      <div>       
+        <Text as={props.as} className={className} fontSize={props.fontSize}>{text}</Text>
+    </div>
   )
 }
 

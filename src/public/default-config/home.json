@@ -1,7 +1,7 @@
 {
   "component": "box",
   "id": "cardWrapper",
-  "className": "main-content",
+  "className": "",
   "children": [
     {
       "component": "box",
@@ -80,9 +80,9 @@
                       "children": [
                         {
                           "component": "text",
-                          "text": "DANH MỤC SẢN PHẨM",
+                          "text": "Nhóm sản phẩm",
                           "id": "initialWrapper",
-                          "className": "page-title-box",
+                          "className": "page-title-box text-dark",
                           "styles": [
                             {
                               "name": "",
@@ -93,6 +93,10 @@
                               "value": "white"
                             }
                           ],
+                          "props":{
+                            "fontSize":"lg",
+                            "as":"b"
+                          },
                           "children": ""
                         }
                       ]
@@ -207,8 +211,9 @@
                               "key":"create_at",
                               "label":"Ngày tạo"
                             }
-
                           ],
+                          "api":"/collection/api/v1/list",
+                          "params":"",
                           "children": ""
                         }
                       ]

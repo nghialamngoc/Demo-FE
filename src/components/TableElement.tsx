@@ -18,9 +18,14 @@ const TableElement = ({
   children, 
   text ,
   cols,
+  api,
   ...restProps
 }: TableElementProps) => {
-  const res = {
+  let res;
+  if (api){
+    //call Api---------------------------
+  }
+   res = {
     "currentPage":1,
     "data":[
        {

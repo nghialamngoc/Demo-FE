@@ -1,5 +1,6 @@
 import { createElement } from 'react'
 import BoxElement from '../components/BoxElement'
+import ButtonElement from '../components/ButtonElement'
 import TableElement from '../components/TableElement'
 import TextElement from '../components/TextElement'
 import { IConfig, Style } from '../interfaces'
@@ -7,7 +8,8 @@ import { IConfig, Style } from '../interfaces'
 const keysToComponentMap: any = {
   box: BoxElement,
   text:TextElement,
-  table:TableElement
+  table:TableElement,
+  button: ButtonElement,
 }
 
 const stylesMap = (styles: Array<Style>) => {
