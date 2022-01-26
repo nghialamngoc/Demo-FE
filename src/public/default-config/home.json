@@ -9,7 +9,7 @@
       "className": "page-content",
       "styles": [
         {
-          "name": "backgroundColor",
+          "name": "",
           "value": "#7abdff"
         },
         {
@@ -24,7 +24,7 @@
           "className": "page-container",
           "styles": [
             {
-              "name": "backgroundColor",
+              "name": "",
               "value": ""
             },
             {
@@ -39,7 +39,7 @@
               "className": "row",
               "styles": [
                 {
-                  "name": "backgroundColor",
+                  "name": "",
                   "value": "#6366F1"
                 },
                 {
@@ -54,7 +54,7 @@
                   "className": "col-12",
                   "styles": [
                     {
-                      "name": "backgroundColor",
+                      "name": "",
                       "value": "#6366F1"
                     },
                     {
@@ -69,7 +69,7 @@
                       "className": "page-title-box",
                       "styles": [
                         {
-                          "name": "backgroundColor",
+                          "name": "",
                           "value": "#6366F1"
                         },
                         {
@@ -85,7 +85,7 @@
                           "className": "page-title-box",
                           "styles": [
                             {
-                              "name": "backgroundColor",
+                              "name": "",
                               "value": "#6366F1"
                             },
                             {
@@ -107,7 +107,7 @@
               "className": "row",
               "styles": [
                 {
-                  "name": "backgroundColor",
+                  "name": "",
                   "value": ""
                 },
                 {
@@ -122,7 +122,7 @@
                   "className": "col-12",
                   "styles": [
                     {
-                      "name": "backgroundColor",
+                      "name": "",
                       "value": ""
                     },
                     {
@@ -137,15 +137,48 @@
                       "className": "page-title-box",
                       "styles": [
                         {
-                          "name": "backgroundColor",
+                          "name": "",
                           "value": ""
                         },
                         {
                           "name": "color",
                           "value": "white"
                         }
-                      ],
+                      ],                      
                       "children": [
+                        {
+                          "component": "button",
+                          "text":"Tạo nhóm sản phẩm",
+                          "id": "btn-add",
+                          "className": "btn",
+                          "styles": [
+                            {
+                              "name": "",
+                              "value": ""
+                            },
+                            {
+                              "name": "color",
+                              "value": "white"
+                            }
+                          ]
+                        },
+                        {
+                          "component": "button",
+                          "text":"Tải lại",
+                          "id": "btn-add",
+                          "className": "btn mx-2",
+                          "styles": [
+                            {
+                              "name": "",
+                              "value": ""
+                            },
+                            {
+                              "name": "color",
+                              "value": "white"
+                            }
+                          ]
+                        },
+
                         {
                           "component": "table",
                           "text": "DANH MỤC SẢN PHẨM",
@@ -153,13 +186,28 @@
                           "className": "page-title-box",
                           "styles": [
                             {
-                              "name": "backgroundColor",
+                              "name": "",
                               "value": "#red !important"
                             },
                             {
                               "name": "color",
                               "value": "white"
                             }
+                          ],
+                          "cols":[
+                            {
+                              "key":"id",
+                              "label":"ID"
+                            },
+                            {
+                              "key":"collection_title",
+                              "label":"Tên"
+                            },
+                            {
+                              "key":"create_at",
+                              "label":"Ngày tạo"
+                            }
+
                           ],
                           "children": ""
                         }

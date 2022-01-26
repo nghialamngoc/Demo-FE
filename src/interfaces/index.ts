@@ -37,4 +37,14 @@ export interface TableElementProps {
   style: CSSProperties
   id: string
   children: any
+  cols:any[]
+}
+
+export interface ButtonElementProps {
+  className: string
+  text:string
+  style: CSSProperties
+  id: string
+  children: any
+  color:string
 }
