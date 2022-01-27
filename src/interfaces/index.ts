@@ -42,3 +42,33 @@ export interface ITableElementProps {
   canEdit?: boolean
   canDelete?: boolean
 }
+
+export interface TextElementProps {
+  className: string
+  text:string
+  style: CSSProperties
+  id: string
+  children: any
+  level:string
+  props:any
+}
+
+export interface TableElementProps {
+  className: string
+  text:string
+  style: CSSProperties
+  id: string
+  children: any
+  cols:any[]
+  api:string
+}
+
+export interface ButtonElementProps {
+  className: string
+  text:string
+  style: CSSProperties
+  id: string
+  children: any
+  color:string
+  href:string
+}
