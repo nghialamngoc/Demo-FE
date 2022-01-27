@@ -15,7 +15,7 @@ const FormDemo = () => {
       <Formik
         initialValues={formDemoJson.initialFormValue}
         validationSchema={validateSchema}
-        onSubmit={(values) => {
+        onSubmit={(values: any) => {
           console.log(values)
         }}
       >
@@ -26,7 +26,7 @@ const FormDemo = () => {
           handleBlur,
           handleSubmit,
           touched,
-        }) => (
+        }: any) => (
           <Form onSubmit={handleSubmit}>
             <input
               name="firstName"

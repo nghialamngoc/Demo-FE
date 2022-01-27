@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { IConfig } from '../../interfaces'
 import configDefault from '../../public/default-config/home.json'
-import { renderComponent } from '../../services/render'
+import { renderComponent } from '../../services/renderComponent'
 
 const HomePage = () => {
   const [config] = useState<IConfig>(configDefault)

@@ -1,0 +1,30 @@
+{
+  "component": "box",
+  "id": "cardWrapper",
+  "className": "something",
+  "children": [
+    {
+      "component": "box",
+      "id": "initialWrapper",
+      "className": "aa",
+      "styles": {
+        "width": "30px",
+        "height": "30px",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "backgroundColor": "#2ab57d",
+        "cursor": "pointer"
+      },
+      "children": [
+        {
+          "component": "ArrowBackIcon",
+          "isIcon": true,
+          "id": "",
+          "className": "",
+          "color": "white"
+        }
+      ]
+    }
+  ]
+}

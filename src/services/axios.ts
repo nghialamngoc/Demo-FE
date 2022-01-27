@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { startsWith } from 'lodash'
 import { getToken } from '../helpers/auth'
 
 let refreshTokenRequest: any = null
@@ -12,6 +13,14 @@ instance.interceptors.request.use((config: any) => {
   const token = getToken()
   if (token) {
     config.headers['Authorization'] = 'Bearer ' + token
+  }
+
+  if (startsWith(config.url, '/static/api')) {
+    // change body data to query data
+    if (config.data && typeof config.data === 'object') {
+      config.params = { ...config.params, ...config.data }
+    }
+    config.method = 'GET'
   }
 
   return config
