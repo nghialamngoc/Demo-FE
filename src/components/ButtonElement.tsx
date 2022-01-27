@@ -1,5 +1,6 @@
 import { Button, ButtonGroup, color } from '@chakra-ui/react'
 import { ButtonElementProps } from '../interfaces'
+import { Outlet, Link } from "react-router-dom";
 
 const ButtonElement = ({
   className,
@@ -9,9 +10,15 @@ const ButtonElement = ({
   text ,
   color,
   ...restProps
-}: ButtonElementProps) => {
+}: ButtonElementProps) => {  
+  let button:any = <Button className={className} colorScheme={color}>{text}</Button>
+  if (restProps.href){
+    button =  <Link to="/form-demo"><Button className={className} colorScheme={color}>{text}</Button></Link>
+  }  
   return (
-    <Button className={className} colorScheme={color}>{text}</Button>
+    <div>
+      {button}     
+    </div>
   )
 }
 

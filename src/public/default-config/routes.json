@@ -5,8 +5,13 @@
     "component": "home"
   },
   {
-    "route_name": "form-demo",
+    "route_name": "form",
     "path": "/form-demo",
     "component": "form"
+  },
+  {
+    "route_name": "CUCollection",
+    "path": "/collection/cu",
+    "component": "CUCollection"
   }
 ]

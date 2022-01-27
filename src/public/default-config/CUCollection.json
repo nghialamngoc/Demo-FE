@@ -80,7 +80,7 @@
                       "children": [
                         {
                           "component": "text",
-                          "text": "Nhóm sản phẩm",
+                          "text": "Tạo nhóm sản phẩm",
                           "id": "initialWrapper",
                           "className": "page-title-box text-dark",
                           "styles": [
@@ -164,8 +164,7 @@
                               "name": "color",
                               "value": "white"
                             }
-                          ],
-                          "href":"/form-demo"
+                          ]
                         },
                         {
                           "component": "button",
@@ -182,41 +181,7 @@
                               "value": "white"
                             }
                           ]
-                        },
-
-                        {
-                          "component": "table",
-                          "text": "DANH MỤC SẢN PHẨM",
-                          "id": "initialWrapper",
-                          "className": "page-title-box",
-                          "styles": [
-                            {
-                              "name": "",
-                              "value": "#red !important"
-                            },
-                            {
-                              "name": "color",
-                              "value": "white"
-                            }
-                          ],
-                          "cols":[
-                            {
-                              "key":"id",
-                              "label":"ID"
-                            },
-                            {
-                              "key":"collection_title",
-                              "label":"Tên"
-                            },
-                            {
-                              "key":"create_at",
-                              "label":"Ngày tạo"
-                            }
-                          ],
-                          "api":"/collection/api/v1/list",
-                          "params":"",
-                          "children": ""
-                        }
+                        }                      
                       ]
                     }
                   ]

@@ -4,10 +4,12 @@ import HomePage from './pages/Home'
 import defaultRoutes from './public/default-config/routes.json'
 import { useState } from 'react'
 import FormDemo from './pages/FormDemo'
+import CUCollection from './pages/Collection/CU'
 
 const componentRegistry: any = {
   home: <HomePage></HomePage>,
   form: <FormDemo></FormDemo>,
+  CUCollection: <CUCollection></CUCollection>,
 }
 
 export const App = () => {

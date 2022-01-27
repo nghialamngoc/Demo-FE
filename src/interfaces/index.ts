@@ -50,4 +50,5 @@ export interface ButtonElementProps {
   id: string
   children: any
   color:string
+  href:string
 }
