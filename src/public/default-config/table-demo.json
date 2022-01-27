@@ -1,0 +1,24 @@
+{
+  "component": "table",
+  "id": "table-demo",
+  "className": "table-demo",
+  "urlApi": "/static/api/table.json",
+  "headers": [
+    {
+      "name": "Tên ưu đãi",
+      "key": "name",
+      "width": "500px"
+    },
+    {
+      "name": "Thời gian bắt đầu",
+      "key": "start_time"
+    },
+    {
+      "name": "Thời gian kết thúc",
+      "key": "end_time",
+      "width": "400px"
+    }
+  ],
+  "canEdit": true,
+  "canDelete": true
+}
